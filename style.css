@@ -1,11 +1,11 @@
 .low-usage {
-  color: green;
+  background-color: green;
 }
 .medium-usage {
-  color: orange;
+  background-color: orange;
 }
 .high-usage {
-  color: red;
+  background-color: red;
 }
 
 #temperature-up   {border-radius: 50%;}
@@ -13,6 +13,11 @@
 #temperature-reset {border-radius: 5px;}
 #city-form {border-radius: 5px;}
 
-body {background-color: #ADD8E6;}
 h1 {font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
 h2 {color: #008B8B ; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+}
