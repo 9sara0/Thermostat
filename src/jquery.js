@@ -57,8 +57,17 @@ $(document).ready(function() {
     $.get(url + token + units , function(data) {
       $('#current-temperature').text(data.main.temp);
       $('#city-name').text(city + '  temperature: ');
+      displayIcon(data.weather[0].icon)
     });
   }
+
+  function displayIcon(icon_code) {
+    var url       = "http://openweathermap.org/img/w/" + icon_code;
+    var extention = ".png";
+    var source    = url + extention;
+    $('#icon').attr('src', source);
+  }
+
 
   var bar = new ProgressBar.SemiCircle(container, {
     strokeWidth: 6,
